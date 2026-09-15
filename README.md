@@ -64,13 +64,6 @@ python evaluate.py
 
 Web demos: `grade_multiclass/web/` and old `multiclass/web/` are static — `python -m http.server 8000` inside folder.
 
-## What to fix before PFE / push
-
-1. `grade_multiclass/*.ipynb` is stale — delete or regenerate from `.py`; never link the old `multiclass/` 1M version on CV.
-2. Do not push binaries to GitHub: `*.safetensors` (268MB x4), `distilbert-base-uncased/` (1GB+), `*.bin`, `*.pt`, `model.pkl` 27M, `train_data_scaled.csv` 161M. Code + plots + `*.json` + small CSVs go to GitHub; models + large CSVs already have `huggingface` remote (`sahlnizar/students-insights`) — push those there with Git LFS.
-3. `.gitignore` currently ignores `checkpoints/` but not `*.safetensors` / `*.pkl` / large CSVs — add them before `git push origin main`, or the push will be rejected / huge.
-4. Re-run grade `.py` and 5-class eval once and paste the 3 numbers (acc / macro-F1 / per-class) into this README and into the CV — recruiters will ask.
-
 ## Author
 
 Nizar Sahl — https://github.com/nmetal05/students-insights — HF mirror `sahlnizar/students-insights`
