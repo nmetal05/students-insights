@@ -1,0 +1,16 @@
+Feature 1,Feature 2,Correlation
+Curricular units 1st sem (credited),Curricular units 2nd sem (credited),0.9470934915899273
+Curricular units 1st sem (enrolled),Curricular units 2nd sem (enrolled),0.9412864966294326
+Curricular units 1st sem (approved),Curricular units 2nd sem (approved),0.9163339784914017
+Mother's occupation,Father's occupation,0.8865682817307416
+Curricular units 1st sem (grade),Curricular units 2nd sem (grade),0.8458637025340845
+Nacionality,International,0.7973873767851265
+Curricular units 1st sem (evaluations),Curricular units 2nd sem (evaluations),0.7906158307754103
+Curricular units 2nd sem (approved),Curricular units 2nd sem (grade),0.7868376275910449
+Curricular units 1st sem (credited),Curricular units 1st sem (enrolled),0.7828630989223708
+Curricular units 1st sem (enrolled),Curricular units 1st sem (approved),0.7735791213004372
+Curricular units 1st sem (enrolled),Curricular units 2nd sem (credited),0.7632761218093532
+Curricular units 1st sem (approved),Curricular units 2nd sem (enrolled),0.7373747998128278
+Curricular units 1st sem (approved),Curricular units 1st sem (grade),0.7101565018864167
+Curricular units 1st sem (approved),Curricular units 2nd sem (grade),0.7093678199762506
+Curricular units 2nd sem (enrolled),Curricular units 2nd sem (approved),0.7044445310875675

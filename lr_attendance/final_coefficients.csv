@@ -1,0 +1,13 @@
+Feature,Coefficient
+school_avg_attendance,7.171348715713736
+school_year_progress,-1.5605297921826944
+days_to_next_holiday,0.7496704390789359
+is_snowy_day,-0.66548297262725
+precipitation_hours,-0.4631543689630163
+is_friday,-0.3230532695248619
+day_of_week,-0.3176427595205633
+temp_mean,0.2923542560616456
+is_holiday,-0.24976999079401288
+is_monday,-0.21064021730157015
+is_rainy_day,0.037596682642466635
+school_std_attendance,-0.0019548833102194414

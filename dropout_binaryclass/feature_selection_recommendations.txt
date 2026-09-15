@@ -1,0 +1,42 @@
+FEATURE SELECTION RECOMMENDATIONS
+==================================================
+
+Features to DROP (17):
+  - Curricular units 2nd sem (enrolled)
+  - Curricular units 1st sem (credited)
+  - Nacionality
+  - Mother's occupation
+  - Curricular units 1st sem (approved)
+  - Educational special needs
+  - Inflation rate
+  - International
+  - Curricular units 2nd sem (credited)
+  - Curricular units 2nd sem (grade)
+  - Course
+  - Curricular units 1st sem (enrolled)
+  - Father's occupation
+  - Curricular units 1st sem (evaluations)
+  - Curricular units 1st sem (grade)
+  - Father's qualification
+  - Unemployment rate
+
+Features to KEEP (19):
+  + Curricular units 2nd sem (approved)
+  + Tuition fees up to date
+  + Scholarship holder
+  + Age at enrollment
+  + Debtor
+  + Gender
+  + Application mode
+  + Admission grade
+  + Displaced
+  + Curricular units 2nd sem (evaluations)
+  + Previous qualification (grade)
+  + Curricular units 2nd sem (without evaluations)
+  + Marital status
+  + Application order
+  + Daytime/evening attendance	
+  + Curricular units 1st sem (without evaluations)
+  + Previous qualification
+  + Mother's qualification
+  + GDP

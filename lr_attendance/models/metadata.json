@@ -1,0 +1,43 @@
+{
+  "features": [
+    "school_avg_attendance",
+    "school_year_progress",
+    "day_of_week",
+    "is_friday",
+    "is_monday",
+    "is_holiday",
+    "days_to_next_holiday",
+    "is_snowy_day",
+    "temp_mean",
+    "precipitation_hours",
+    "snow_cold_interaction",
+    "friday_late_year",
+    "pre_holiday_friday"
+  ],
+  "target": "attendance_rate",
+  "training_date": "2026-01-29T22:13:06.519613",
+  "n_training_samples": 221720,
+  "n_test_samples": 55431,
+  "n_schools": 1583,
+  "metrics": {
+    "r2": 0.6094390319812337,
+    "rmse": 5.941932765403768,
+    "mae": 3.1517497385190874
+  },
+  "coefficients": {
+    "school_avg_attendance": 7.1728341190197895,
+    "school_year_progress": -1.5972042361827463,
+    "day_of_week": -0.31873029602349573,
+    "is_friday": -0.3099406451515395,
+    "is_monday": -0.21197052858181337,
+    "is_holiday": -0.24984927041453012,
+    "days_to_next_holiday": 0.718660288206721,
+    "is_snowy_day": -0.3253780531723476,
+    "temp_mean": 0.27038821574734706,
+    "precipitation_hours": -0.4150078213662999,
+    "snow_cold_interaction": -0.3253780531723492,
+    "friday_late_year": 0.13949548068001114,
+    "pre_holiday_friday": -0.17624979032194193
+  },
+  "intercept": 89.79257729903095
+}

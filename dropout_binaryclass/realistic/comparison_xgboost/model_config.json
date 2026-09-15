@@ -1,0 +1,117 @@
+{
+  "model_name": "Student Dropout Predictor",
+  "model_type": "XGBoost (Tuned)",
+  "features": [
+    "Curricular units 2nd sem (approved)",
+    "Curricular units 2nd sem (evaluations)",
+    "Curricular units 2nd sem (without evaluations)",
+    "Tuition fees up to date",
+    "Scholarship holder",
+    "Debtor",
+    "Gender",
+    "Age at enrollment",
+    "Daytime/evening attendance",
+    "Displaced"
+  ],
+  "num_features": 10,
+  "performance": {
+    "roc_auc": 0.9434,
+    "roc_auc_std": 0.0045,
+    "accuracy": 0.892,
+    "accuracy_std": 0.0069
+  },
+  "feature_importance": [
+    {
+      "feature": "Curricular units 2nd sem (approved)",
+      "importance": 0.4266107976436615
+    },
+    {
+      "feature": "Tuition fees up to date",
+      "importance": 0.2472454458475113
+    },
+    {
+      "feature": "Scholarship holder",
+      "importance": 0.07887265831232071
+    },
+    {
+      "feature": "Debtor",
+      "importance": 0.06558725982904434
+    },
+    {
+      "feature": "Curricular units 2nd sem (evaluations)",
+      "importance": 0.05764281377196312
+    },
+    {
+      "feature": "Gender",
+      "importance": 0.032258644700050354
+    },
+    {
+      "feature": "Age at enrollment",
+      "importance": 0.03202906996011734
+    },
+    {
+      "feature": "Curricular units 2nd sem (without evaluations)",
+      "importance": 0.025066660717129707
+    },
+    {
+      "feature": "Displaced",
+      "importance": 0.023970549926161766
+    },
+    {
+      "feature": "Daytime/evening attendance",
+      "importance": 0.010716132819652557
+    }
+  ],
+  "input_schema": {
+    "units_approved": {
+      "description": "Number of curricular units passed this semester",
+      "type": "integer",
+      "maps_to": "Curricular units 2nd sem (approved)"
+    },
+    "evaluations_taken": {
+      "description": "Number of evaluations/exams taken",
+      "type": "integer",
+      "maps_to": "Curricular units 2nd sem (evaluations)"
+    },
+    "evaluations_missed": {
+      "description": "Number of evaluations missed",
+      "type": "integer",
+      "maps_to": "Curricular units 2nd sem (without evaluations)"
+    },
+    "tuition_paid": {
+      "description": "Is tuition up to date?",
+      "type": "boolean",
+      "maps_to": "Tuition fees up to date"
+    },
+    "has_scholarship": {
+      "description": "Does student have a scholarship?",
+      "type": "boolean",
+      "maps_to": "Scholarship holder"
+    },
+    "has_debt": {
+      "description": "Does student have debt?",
+      "type": "boolean",
+      "maps_to": "Debtor"
+    },
+    "gender": {
+      "description": "Student gender (0=Female, 1=Male)",
+      "type": "integer",
+      "maps_to": "Gender"
+    },
+    "age": {
+      "description": "Age at enrollment",
+      "type": "integer",
+      "maps_to": "Age at enrollment"
+    },
+    "is_daytime": {
+      "description": "Daytime attendance?",
+      "type": "boolean",
+      "maps_to": "Daytime/evening attendance"
+    },
+    "is_displaced": {
+      "description": "Is student displaced?",
+      "type": "boolean",
+      "maps_to": "Displaced"
+    }
+  }
+}

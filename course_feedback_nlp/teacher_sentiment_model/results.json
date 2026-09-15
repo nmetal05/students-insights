@@ -1,0 +1,15 @@
+{
+  "test_accuracy": 96.15760092399076,
+  "negative_recall": 94.3649373881932,
+  "negative_precision": 83.0926752428459,
+  "negative_f1": 88.37079435990506,
+  "neutral_recall": 89.8115551874094,
+  "positive_recall": 96.42464286494796,
+  "missed_struggling_students": 189,
+  "total_negative_cases": 3354,
+  "missed_percentage": 5.635062611806798,
+  "low_confidence_predictions": 14728,
+  "low_confidence_percentage": 10.12539874601254,
+  "macro_f1": 83.2724728076938,
+  "weighted_f1": 96.65053538273234
+}

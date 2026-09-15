@@ -1,0 +1,411 @@
+{
+  "model_name": "Student Dropout Prediction Model",
+  "model_type": "LogisticRegression with StandardScaler",
+  "target_mapping": {
+    "0": "Dropout",
+    "1": "Graduate"
+  },
+  "features": [
+    "Marital status",
+    "Application mode",
+    "Application order",
+    "Course",
+    "Daytime/evening attendance\t",
+    "Previous qualification",
+    "Previous qualification (grade)",
+    "Nacionality",
+    "Mother's qualification",
+    "Father's qualification",
+    "Mother's occupation",
+    "Admission grade",
+    "Displaced",
+    "Educational special needs",
+    "Debtor",
+    "Tuition fees up to date",
+    "Gender",
+    "Scholarship holder",
+    "Age at enrollment",
+    "International",
+    "Curricular units 1st sem (credited)",
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (evaluations)",
+    "Curricular units 1st sem (approved)",
+    "Curricular units 1st sem (grade)",
+    "Curricular units 1st sem (without evaluations)",
+    "Curricular units 2nd sem (evaluations)",
+    "Curricular units 2nd sem (grade)",
+    "Curricular units 2nd sem (without evaluations)",
+    "Unemployment rate",
+    "Inflation rate",
+    "GDP"
+  ],
+  "num_features": 32,
+  "dropped_columns": [
+    "Father's occupation",
+    "Curricular units 2nd sem (credited)",
+    "Curricular units 2nd sem (enrolled)",
+    "Curricular units 2nd sem (approved)"
+  ],
+  "feature_details": {
+    "Marital status": {
+      "dtype": "int64",
+      "min": 1.0,
+      "max": 6.0,
+      "mean": 1.184297520661157,
+      "example_value": 1
+    },
+    "Application mode": {
+      "dtype": "int64",
+      "min": 1.0,
+      "max": 57.0,
+      "mean": 18.421763085399448,
+      "example_value": 17
+    },
+    "Application order": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 6.0,
+      "mean": 1.750137741046832,
+      "example_value": 5
+    },
+    "Course": {
+      "dtype": "int64",
+      "min": 33.0,
+      "max": 9991.0,
+      "mean": 8853.980991735538,
+      "example_value": 171
+    },
+    "Daytime/evening attendance\t": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.8876033057851239,
+      "example_value": 1
+    },
+    "Previous qualification": {
+      "dtype": "int64",
+      "min": 1.0,
+      "max": 43.0,
+      "mean": 4.532231404958678,
+      "example_value": 1
+    },
+    "Previous qualification (grade)": {
+      "dtype": "int64",
+      "min": 95.0,
+      "max": 190.0,
+      "mean": 132.90881542699725,
+      "example_value": 122
+    },
+    "Nacionality": {
+      "dtype": "int64",
+      "min": 1.0,
+      "max": 109.0,
+      "mean": 1.828099173553719,
+      "example_value": 1
+    },
+    "Mother's qualification": {
+      "dtype": "int64",
+      "min": 1.0,
+      "max": 44.0,
+      "mean": 19.986225895316803,
+      "example_value": 19
+    },
+    "Father's qualification": {
+      "dtype": "int64",
+      "min": 1.0,
+      "max": 44.0,
+      "mean": 22.57162534435262,
+      "example_value": 12
+    },
+    "Mother's occupation": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 194.0,
+      "mean": 10.138567493112948,
+      "example_value": 5
+    },
+    "Admission grade": {
+      "dtype": "int64",
+      "min": 95.0,
+      "max": 190.0,
+      "mean": 127.28870523415978,
+      "example_value": 127
+    },
+    "Displaced": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5490358126721763,
+      "example_value": 1
+    },
+    "Educational special needs": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.011019283746556474,
+      "example_value": 0
+    },
+    "Debtor": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1137741046831956,
+      "example_value": 0
+    },
+    "Tuition fees up to date": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.8661157024793389,
+      "example_value": 1
+    },
+    "Gender": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.3440771349862259,
+      "example_value": 1
+    },
+    "Scholarship holder": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.26694214876033057,
+      "example_value": 0
+    },
+    "Age at enrollment": {
+      "dtype": "int64",
+      "min": 17.0,
+      "max": 70.0,
+      "mean": 23.461157024793387,
+      "example_value": 20
+    },
+    "International": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.023691460055096418,
+      "example_value": 0
+    },
+    "Curricular units 1st sem (credited)": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 20.0,
+      "mean": 0.7542699724517906,
+      "example_value": 0
+    },
+    "Curricular units 1st sem (enrolled)": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 26.0,
+      "mean": 6.337465564738292,
+      "example_value": 0
+    },
+    "Curricular units 1st sem (evaluations)": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 45.0,
+      "mean": 8.071074380165289,
+      "example_value": 0
+    },
+    "Curricular units 1st sem (approved)": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 26.0,
+      "mean": 4.791460055096419,
+      "example_value": 0
+    },
+    "Curricular units 1st sem (grade)": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 19.0,
+      "mean": 10.539118457300276,
+      "example_value": 0
+    },
+    "Curricular units 1st sem (without evaluations)": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 12.0,
+      "mean": 0.12892561983471074,
+      "example_value": 0
+    },
+    "Curricular units 2nd sem (evaluations)": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 33.0,
+      "mean": 7.763085399449036,
+      "example_value": 0
+    },
+    "Curricular units 2nd sem (grade)": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 19.0,
+      "mean": 10.038842975206611,
+      "example_value": 0
+    },
+    "Curricular units 2nd sem (without evaluations)": {
+      "dtype": "int64",
+      "min": 0.0,
+      "max": 12.0,
+      "mean": 0.14214876033057852,
+      "example_value": 0
+    },
+    "Unemployment rate": {
+      "dtype": "int64",
+      "min": 8.0,
+      "max": 16.0,
+      "mean": 11.682920110192837,
+      "example_value": 11
+    },
+    "Inflation rate": {
+      "dtype": "int64",
+      "min": -1.0,
+      "max": 4.0,
+      "mean": 1.215702479338843,
+      "example_value": 1
+    },
+    "GDP": {
+      "dtype": "int64",
+      "min": -4.0,
+      "max": 4.0,
+      "mean": 0.0418732782369146,
+      "example_value": 2
+    }
+  },
+  "model_performance": {
+    "avg_roc_auc": 0.9426,
+    "std_roc_auc": 0.0022,
+    "avg_accuracy": 0.8904,
+    "std_accuracy": 0.0123
+  },
+  "feature_importance": [
+    {
+      "feature": "Curricular units 1st sem (approved)",
+      "coefficient": 3.3163108538242474
+    },
+    {
+      "feature": "Curricular units 2nd sem (grade)",
+      "coefficient": 1.5439405534216617
+    },
+    {
+      "feature": "Curricular units 1st sem (enrolled)",
+      "coefficient": -1.1411938218498847
+    },
+    {
+      "feature": "Tuition fees up to date",
+      "coefficient": 0.9630826567928356
+    },
+    {
+      "feature": "Curricular units 1st sem (credited)",
+      "coefficient": -0.8539015768167176
+    },
+    {
+      "feature": "Curricular units 2nd sem (evaluations)",
+      "coefficient": -0.6369395746417482
+    },
+    {
+      "feature": "Course",
+      "coefficient": -0.6055334597267776
+    },
+    {
+      "feature": "International",
+      "coefficient": 0.4993629811863151
+    },
+    {
+      "feature": "Curricular units 1st sem (grade)",
+      "coefficient": -0.4580579977450427
+    },
+    {
+      "feature": "Debtor",
+      "coefficient": -0.3870319293027283
+    },
+    {
+      "feature": "Nacionality",
+      "coefficient": -0.36386269065696214
+    },
+    {
+      "feature": "Scholarship holder",
+      "coefficient": 0.3601197899922311
+    },
+    {
+      "feature": "Age at enrollment",
+      "coefficient": -0.29681419535938647
+    },
+    {
+      "feature": "Gender",
+      "coefficient": -0.22961088968596147
+    },
+    {
+      "feature": "Mother's occupation",
+      "coefficient": 0.20867097544620444
+    },
+    {
+      "feature": "Displaced",
+      "coefficient": -0.19965059186513248
+    },
+    {
+      "feature": "Curricular units 1st sem (without evaluations)",
+      "coefficient": 0.1878768453143166
+    },
+    {
+      "feature": "Previous qualification",
+      "coefficient": 0.1635268539723628
+    },
+    {
+      "feature": "Application mode",
+      "coefficient": -0.13952867123465623
+    },
+    {
+      "feature": "Curricular units 1st sem (evaluations)",
+      "coefficient": 0.13005849075063863
+    },
+    {
+      "feature": "Unemployment rate",
+      "coefficient": -0.12395327972323616
+    },
+    {
+      "feature": "Curricular units 2nd sem (without evaluations)",
+      "coefficient": 0.11533489424236375
+    },
+    {
+      "feature": "Father's qualification",
+      "coefficient": 0.10277051413826378
+    },
+    {
+      "feature": "GDP",
+      "coefficient": -0.09145115697113011
+    },
+    {
+      "feature": "Daytime/evening attendance\t",
+      "coefficient": -0.08582769046990661
+    },
+    {
+      "feature": "Marital status",
+      "coefficient": 0.07586210175822407
+    },
+    {
+      "feature": "Previous qualification (grade)",
+      "coefficient": -0.07382604570456465
+    },
+    {
+      "feature": "Admission grade",
+      "coefficient": 0.06636622661157908
+    },
+    {
+      "feature": "Mother's qualification",
+      "coefficient": -0.05960602912137761
+    },
+    {
+      "feature": "Application order",
+      "coefficient": -0.02756430990311611
+    },
+    {
+      "feature": "Inflation rate",
+      "coefficient": 0.0016776856356872146
+    },
+    {
+      "feature": "Educational special needs",
+      "coefficient": -0.0004318043811183271
+    }
+  ]
+}

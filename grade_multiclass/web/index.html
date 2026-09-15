@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPredict | Student Performance Analytics</title>
+    <meta name="description" content="Professional student grade prediction using advanced machine learning models.">
+    <!-- Google Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">EduPredict</span>
+            </div>
+            <div class="nav-links">
+                <a href="#analyze" class="btn-secondary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title animate-up">Precision Analytics for <span>Academic Success</span></h1>
+                <p class="hero-subtitle animate-up delay-1">Leverage data-driven insights to predict student performance with our advanced classification engine.</p>
+            </div>
+        </section>
+
+        <section id="analyze" class="tool-section">
+            <div class="container">
+                <div class="glass-card main-card animate-up delay-2">
+                    <div class="card-content">
+                        <div class="form-header">
+                            <h2>Performance Analyzer</h2>
+                            <p>Fill in the metrics below to forecast the expected final grade.</p>
+                        </div>
+
+                        <form id="predictionForm" class="prediction-form">
+                            <div class="input-grid">
+                                <div class="input-group">
+                                    <label for="studyHours">Weekly Study Hours</label>
+                                    <div class="input-wrapper">
+                                        <input type="number" id="studyHours" step="0.1" min="0" max="168" placeholder="e.g. 15.5" required>
+                                        <span class="unit">h</span>
+                                    </div>
+                                    <p class="input-hint">Hours spent on self-study per week.</p>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="attendance">Attendance Rate</label>
+                                    <div class="input-wrapper">
+                                        <input type="number" id="attendance" step="0.1" min="0" max="100" placeholder="e.g. 92" required>
+                                        <span class="unit">%</span>
+                                    </div>
+                                    <p class="input-hint">Percentage of classes attended.</p>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="participation">Class Participation</label>
+                                    <div class="input-wrapper">
+                                        <input type="number" id="participation" step="0.1" min="0" max="10" placeholder="e.g. 8.5" required>
+                                        <span class="unit">/ 10</span>
+                                    </div>
+                                    <p class="input-hint">Engagement score in classroom activities.</p>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-primary" id="submitBtn">
+                                <span>Calculate Prediction</span>
+                                <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="resultSection" class="result-container hidden">
+                    <div class="glass-card result-card">
+                        <div class="result-header">
+                            <span class="badge">Predicted Grade</span>
+                        </div>
+                        <div class="result-body">
+                            <div class="grade-display">
+                                <span id="predictedGrade">?</span>
+                            </div>
+                            <div class="result-details">
+                                <h3 id="resultHeading">Excellent Standing</h3>
+                                <p id="resultMessage">Based on the provided data, the student is likely to achieve high honors.</p>
+                            </div>
+                        </div>
+                        <div class="result-footer">
+                            <button class="btn-text" id="resetBtn">Analyze Another Student</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EduPredict Systems. Built for academic excellence.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
